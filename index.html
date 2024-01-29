@@ -5,37 +5,7 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Create Tailwind</title>
-  <style>
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-/* style.css */
-
-/* Your existing styles here */
-
-body.dark-mode {
-    background-color: #1a1a1a; /* Dark mode background color */
-    color: #ffffff; /* Dark mode text color */
-  }
-
-  .grid div {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    height: 400px;
-    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add transition for smooth effect */
-  }
-  
-  .grid div:hover {
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
-    /* transform: scale(1.1); Scale on hover */
-    /* Add any other styles you want for the hover effect */
-  }
-  
-  
-  /* Add additional styles for dark mode as needed */
-  
-  </style>
-  <!-- <link rel="stylesheet" href="/style.css" /> -->
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
   <nav class="bg-gray-800 p-4 text-white">
@@ -92,44 +62,7 @@ body.dark-mode {
     <div class="bg-gray-800 flex items-center justify-center hover:scale-110">1</div>
   </div>
 
-  <script>
-    // script.js
-
-document.addEventListener('DOMContentLoaded', function () {
-  const drawerToggle = document.getElementById('drawerToggle');
-  const drawerClose = document.getElementById('drawerClose');
-  const drawer = document.getElementById('drawer');
-  const darkModeToggle = document.getElementById('darkModeToggle');
-
-  drawerToggle.addEventListener('click', () => {
-    drawer.classList.toggle('hidden');
-  });
-
-  drawerClose.addEventListener('click', () => {
-    drawer.classList.add('hidden');
-  });
-
-  darkModeToggle.addEventListener('click', () => {
-    document.documentElement.classList.toggle('dark');
-  });
-
-  const myList = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"];
-
-  const gridContainer = document.getElementById("gridContainer");
-
-  const ulElement = document.createElement("ul");
-  ulElement.classList.add("grid", "grid-cols-2", "gap-4");
-
-  myList.forEach((item) => {
-    const liElement = document.createElement("li");
-    liElement.classList.add("bg-gray-300", "p-4");
-    liElement.textContent = item;
-    ulElement.appendChild(liElement);
-  });
-  gridContainer.appendChild(ulElement);
-});
-
-  </script>
+  <script src="/script.js"></script>
   <script>
     // custom config for the MTW app 
     const mtwAppConfig = {
