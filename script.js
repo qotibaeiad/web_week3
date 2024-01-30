@@ -1,5 +1,3 @@
-// script.js
-
 document.addEventListener('DOMContentLoaded', function () {
   const drawerToggle = document.getElementById('drawerToggle');
   const drawerClose = document.getElementById('drawerClose');
@@ -16,6 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   darkModeToggle.addEventListener('click', () => {
     document.documentElement.classList.toggle('dark');
+    const navBar = document.getElementById('gridid');
+    navBar.style.backgroundColor = document.documentElement.classList.contains('dark') ? 'white' : 'rgb(9,19,33)';
   });
 
   const myList = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"];

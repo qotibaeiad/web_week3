@@ -27,7 +27,11 @@
         <a href="#" class="hover:text-gray-300">Services</a>
         <a href="#" class="hover:text-gray-300">Contact</a>
       </div>
+      <button id="darkModeToggle" class="focus:outline-none bg-white hover:scale-110 text-black">
+        Dark Mode
+      </button>
     </div>
+    
   </nav>
   <div id="drawer" class="lg:hidden fixed inset-0 bg-gray-800 bg-opacity-75 z-50 hidden">
     <div class="flex justify-end p-4">
@@ -46,7 +50,7 @@
     </div>
   </div>
 
-  <div style="background-color: rgb(31,41,55)" class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-20 pt-20 ">
+  <div id="gridid" style="background-color: rgb(31,41,55)" class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-20 pt-20 ">
     <div style="background-color: rgb(80,93,110);" class="bg-gray-800 flex items-center justify-center hover:scale-110 text-white text-center">Scientists have found a potentially habitable exoplanet, Kepler-452b, orbiting a sun-like star in the Cygnus constellation. With conditions suitable for liquid water, the discovery offers a significant step forward in the search for extraterrestrial life.</div>
     <div style="background-color: rgb(80,93,110);" class="bg-gray-800 flex items-center justify-center hover:scale-110 text-white text-center">Scientists have found a potentially habitable exoplanet, Kepler-452b, orbiting a sun-like star in the Cygnus constellation. With conditions suitable for liquid water, the discovery offers a significant step forward in the search for extraterrestrial life.</div>
     <div style="background-color: rgb(80,93,110);" class="bg-gray-800 flex items-center justify-center hover:scale-110 text-white text-center">Scientists have found a potentially habitable exoplanet, Kepler-452b, orbiting a sun-like star in the Cygnus constellation. With conditions suitable for liquid water, the discovery offers a significant step forward in the search for extraterrestrial life.</div>
@@ -64,13 +68,9 @@
 
   <script src="/script.js"></script>
   <script>
-    // custom config for the MTW app 
     const mtwAppConfig = {
         border: true // app border in the MTW page                    
-    }
-
-    ///////////////////////////////////////////////////////
-    // implement these functions in order to use private API        
+    }       
     const sendPrivateApiRequest = async () => {
         // your code here:
         // sendRequestToParent({ cat: 'getAssets' })
