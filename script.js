@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
   darkModeToggle.addEventListener('click', () => {
     document.documentElement.classList.toggle('dark');
     const navBar = document.getElementById('gridid');
-    navBar.style.backgroundColor = document.documentElement.classList.contains('dark') ? 'white' : 'rgb(9,19,33)';
+    navBar.style.backgroundColor = document.documentElement.classList.contains('dark') ? 'rgb(31,41,55)' : 'white';
   });
 
   const myList = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"];
