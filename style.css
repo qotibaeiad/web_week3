@@ -7,17 +7,16 @@ body.dark-mode {
     background-color: #1a1a1a; 
     color: #ffffff; 
   }
-
-  .grid div {
+/* 
+  .cont div {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     transition: box-shadow 0.3s ease-in-out, 
     transform 0.3s ease-in-out; 
    }
   
-  .grid div:hover {
+  .cont div:hover {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
   }
-
-  
+   */
   
