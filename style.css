@@ -11,7 +11,6 @@ body.dark-mode {
   .grid div {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
-    height: 400px;
     transition: box-shadow 0.3s ease-in-out, 
     transform 0.3s ease-in-out; 
    }

@@ -18,18 +18,23 @@ document.addEventListener('DOMContentLoaded', function () {
     navBar.style.backgroundColor = document.documentElement.classList.contains('dark') ? 'rgb(31,41,55)' : 'white';
   });
 
-  const myList = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"];
+  const dropdownButton = document.getElementById("dropdown-button");
+  const dropdown = document.getElementById("dropdown");
 
-  const gridContainer = document.getElementById("gridContainer");
-
-  const ulElement = document.createElement("ul");
-  ulElement.classList.add("grid", "grid-cols-2", "gap-4");
-
-  myList.forEach((item) => {
-    const liElement = document.createElement("li");
-    liElement.classList.add("bg-gray-300", "p-4");
-    liElement.textContent = item;
-    ulElement.appendChild(liElement);
+  dropdownButton.addEventListener("click", () => {
+    dropdown.classList.toggle("hidden");
   });
-  gridContainer.appendChild(ulElement);
+
+  document.addEventListener("click", function (event) {
+    if (!dropdown.contains(event.target) && event.target !== dropdownButton) {
+      dropdown.classList.add("hidden");
+    }
+  });
+
+  const dropdownItems = document.querySelectorAll("dropdown");
+  dropdownItems.forEach(item => {
+    item.addEventListener("click", () => {
+      dropdown.classList.add("dropdown");
+    });
+  });
 });
