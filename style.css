@@ -7,6 +7,20 @@ body.dark-mode {
     background-color: #1a1a1a; 
     color: #ffffff; 
   }
+
+  #grid {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Additional styles for the grid element, adjust as needed */
+  #grid:hover {
+    transform: scale3d(); /* Example rotation on hover, adjust as needed */
+  }
+
+  .title {
+    color: white;
+  }
+
 /* 
   .cont div {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
