@@ -15,6 +15,10 @@ document.addEventListener('DOMContentLoaded', function () {
   darkModeToggle.addEventListener('click', () => {
     document.documentElement.classList.toggle('dark');
     const navBar = document.getElementById('gridid');
+    const body = document.getElementById('bodyw');
+    const grid = document.getElementById('grid');
+    grid.style.backgroundColor = document.documentElement.classList.contains('dark') ? 'rgb(31,41,55)' : 'white';
+    body.style.backgroundColor = document.documentElement.classList.contains('dark') ? 'rgb(31,41,55)' : 'white';
     navBar.style.backgroundColor = document.documentElement.classList.contains('dark') ? 'rgb(31,41,55)' : 'white';
 
     // Get the current dark mode state
