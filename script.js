@@ -16,6 +16,17 @@ document.addEventListener('DOMContentLoaded', function () {
     document.documentElement.classList.toggle('dark');
     const navBar = document.getElementById('gridid');
     navBar.style.backgroundColor = document.documentElement.classList.contains('dark') ? 'rgb(31,41,55)' : 'white';
+
+    // Get the current dark mode state
+    const isDarkMode = document.documentElement.classList.contains('dark');
+
+    // Select all elements with the class "title"
+    const titleElements = document.querySelectorAll('.title');
+
+    // Change color of all elements with the class "title" based on dark mode state
+    titleElements.forEach(titleElement => {
+      titleElement.style.color = isDarkMode ? 'white' : 'black';
+    });
   });
 
   const dropdownButton = document.getElementById("dropdown-button");
