@@ -32,24 +32,4 @@ document.addEventListener('DOMContentLoaded', function () {
       titleElement.style.color = isDarkMode ? 'white' : 'black';
     });
   });
-
-  const dropdownButton = document.getElementById("dropdown-button");
-  const dropdown = document.getElementById("dropdown");
-
-  dropdownButton.addEventListener("click", () => {
-    dropdown.classList.toggle("hidden");
-  });
-
-  document.addEventListener("click", function (event) {
-    if (!dropdown.contains(event.target) && event.target !== dropdownButton) {
-      dropdown.classList.add("hidden");
-    }
-  });
-
-  const dropdownItems = document.querySelectorAll("dropdown");
-  dropdownItems.forEach(item => {
-    item.addEventListener("click", () => {
-      dropdown.classList.add("dropdown");
-    });
-  });
 });
